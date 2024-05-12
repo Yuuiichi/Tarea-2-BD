@@ -10,11 +10,17 @@ En el archivo .zip se encuentra:
 
 Instrucciones:
 Primero, se deberá tener el programa Xampp instalado
-En la carpeta de instalación de Xampp, existirá la carpeta "htdocs", ahí se deberá pegar la carpeta PHP y BD
-entregadas en la tarea, luego, para visualizar la página web, se usará la url localhost/PHP/index.php, la cual
+En la carpeta de instalación de Xampp, existirá la carpeta "htdocs", ahí se deberá pegar la carpeta PHP.
+Para importar la base de datos, se usará el archivo "Base_de_datos_hotel.sql" dentro de la carpeta BD, 
+se deberá ejecutar Xampp y activar "Apache" y "mysql", luego, se apretará el boton de "admin" de "mysql".
+En la página que se nos abra, crearemos una nueva base de datos, de nombre "hotel_la_diversion", y la
+seleccionaremos, luego, en la barra de arriba, daremos "importar", y usamos el archivo "Base_de_datos_hotel.slq"
+anteriormente mencionado, con eso, la BD se importará y se crearán las tablas.
+Luego, para visualizar la página web, se usará la url localhost/PHP/index.php, la cual
 nos redigirá a la página principal, desde la cual se podrá acceder a las reservas de habitaciones.
 Para reservar tours, se deberá acceder desde la barra de navegación superior
 
 
 Observaciones:
 * Se asume que todos los inputs (Como reservas de habitaciones con ruts, fechas, etc.) van a ser correctos
+* Se asume que una persona no puede reservar más de una habitacion
