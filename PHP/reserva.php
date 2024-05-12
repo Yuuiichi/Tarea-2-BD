@@ -17,12 +17,6 @@
             Número de habitación: <input type="text" name="nro_habitacion" placeholder="Ingrese número"> <br>
             Fecha Check In: <input type="date" name="fecha_in"> <br>
             Fecha Check Out: <input type="date" name="fecha_out"> <br> <br>
-            Tipo de habitación:
-            <select name="tipo_habitacion">
-                <option value="single">Single</option>
-                <option value="double">Double</option>
-                <option value="king">King</option>
-            </select> <br>
             <input type="submit" name="reservar" value="Reservar"> <br>
         </form>
         <?php include "con_db.php"; 
@@ -31,9 +25,8 @@
             $nro_habitacion = $_POST['nro_habitacion'];
             $fecha_in = $_POST['fecha_in'];
             $fecha_out = $_POST['fecha_out'];
-            $tipo_habitacion = $_POST['tipo_habitacion'];
 
-            $reserva="INSERT INTO reserva (rut, nro_habitacion, fecha_check_in, fecha_check_out, tipo_habitacion) VALUES ('$rut','$nro_habitacion','$fecha_in','$fecha_out','$tipo_habitacion')";
+            $reserva="INSERT INTO reserva (rut, habitacion_reservada, fecha_check_in, fecha_check_out) VALUES ('$rut', '$nro_habitacion', '$fecha_in','$fecha_out')";
             $resultado = mysqli_query($conexion, $reserva);
             if ($resultado){
                 ?>

@@ -21,9 +21,11 @@
         include "con_db.php";
         if (isset($_GET["buscar"])) {
             $busqueda = $_GET["busqueda"];
-            $consulta = $conexion->query("SELECT * FROM reserva WHERE nro_habitacion LIKE '%$busqueda%'");
-            while ($row = $consulta->fetch_array()){
-                echo "La habitación ".$row['nro_habitacion']." está reservada desde ".$row['fecha_check_in']." Hasta ".$row['fecha_check_out'].'<br>';
+            $consulta = $conexion->query("SELECT * FROM reserva WHERE habitacion_reservada LIKE '%$busqueda%'");
+            if ($row = $consulta->fetch_array()){
+                echo "La habitación ".$row['habitacion_reservada']." está reservada desde ".$row['fecha_check_in']." Hasta ".$row['fecha_check_out'].'<br>';
+            } else {
+                echo "La habitación está desocupada";
             }
         }
         ?>

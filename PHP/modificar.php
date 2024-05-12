@@ -30,12 +30,14 @@
             $fecha_in = $_POST['fecha_in'];
             $fecha_out = $_POST['fecha_out'];
 
-            $modificar = "UPDATE reserva SET nro_habitacion='$nro_habitacion_2',fecha_check_in='$fecha_in',fecha_check_out='$fecha_out' WHERE rut LIKE '%$rut%'";
+            $modificar = "UPDATE reserva SET habitacion_reservada='$nro_habitacion_2',fecha_check_in='$fecha_in',fecha_check_out='$fecha_out' WHERE rut LIKE '%$rut%'";
             $resultado = mysqli_query($conexion, $modificar);
             if ($resultado){
                 ?>
                 <h3 class="ok">Modificación realizada con Éxito!</h3>
                 <?php
+            }else {
+                echo "No se ha podido modificar";
             }
         }
         ?>

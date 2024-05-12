@@ -13,12 +13,11 @@
     <?php include "includes/nav.php" ?>
     <?php include "includes/header.php" ?>
     
-    
     <main>
-        <a data-active="reservar" href="reserva.php">Reservar</a> <br>
-        <a data-active="buscador" href="buscador.php">Buscar Reservas</a> <br>
-        <a data-active="modificar" href="modificar.php">Modificar Reserva</a> <br>
-        <a data-active="buscador" href="eliminar.php">Eliminar reserva</a> <br>
+        <a class="btn" href="reserva.php">Reservar</a> </br>
+        <a class="btn" href="buscador.php">Buscar Reservas</a> </br>
+        <a class="btn" href="modificar.php">Modificar Reserva</a> </br>
+        <a class="btn" href="eliminar.php">Eliminar reserva</a> </br>
     </main>
     
     <?php include "includes/footer.php" ?>
