@@ -16,13 +16,8 @@
             RUT: <input type="text" name="rut" placeholder="Ingrese Rut"> <br>
             Número de habitación: <input type="text" name="nro_habitacion" placeholder="Ingrese número"> <br>
             Fecha Check In: <input type="date" name="fecha_in"> <br>
-            Fecha Check Out: <input type="date" name="fecha_out"> <br> <br>
-            Tipo de habitación:
-            <select name="tipo_habitacion">
-                <option value="single">Single</option>
-                <option value="double">Double</option>
-                <option value="king">King</option>
-            </select> <br>
+            Fecha Check Out: <input type="date" name="fecha_out"> <br>
+            Tipo de Habitación (single, double o king): <input type="text" name="tipo_habitacion" placeholder="Tipo habitacion"> <br>
             <input type="submit" name="reservar" value="Reservar"> <br>
         </form>
         <?php include "con_db.php"; 
@@ -37,7 +32,7 @@
             $resultado = mysqli_query($conexion, $reserva);
             if ($resultado){
                 ?>
-                <h3 class="ok">Reserva realizada con Éxito!</h3>
+                <h3 class="ok">Reserva realizada con Éxito!</h3>zzz
                 <?php
             }
         }

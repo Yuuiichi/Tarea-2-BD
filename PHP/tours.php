@@ -15,9 +15,9 @@
     
     
     <main>
-        <a data-active="reservar" href="">Reservar Tour</a> <br>
-        <a data-active="buscador" href="">Buscar Tours</a> <br>
-        <a data-active="buscador" href="">Eliminar Tour</a> <br>
+        <a class="btn" href="reser_tour.php">Reservar Tour</a> <br>
+        <a class="btn" href="">Buscar Tours</a> <br>
+        <a class="btn" href="">Eliminar Tour</a> <br>
     </main>
     
     <?php include "includes/footer.php" ?>
