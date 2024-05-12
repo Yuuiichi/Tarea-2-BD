@@ -6,19 +6,18 @@
     <meta name="description" content="pagina principal">
     <meta name="keywords" content="index">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Hotel La Diversion</title>
+    <title>Tours</title>
 </head>
 <body>
     
     <?php include "includes/nav.php" ?>
-    <?php include "includes/header.php" ?>
+    <?php include "includes/header_tours.php" ?>
     
     
     <main>
-        <a data-active="reservar" href="reserva.php">Reservar</a> <br>
-        <a data-active="buscador" href="buscador.php">Buscar Reservas</a> <br>
-        <a data-active="modificar" href="modificar.php">Modificar Reserva</a> <br>
-        <a data-active="buscador" href="eliminar.php">Eliminar reserva</a> <br>
+        <a data-active="reservar" href="">Reservar Tour</a> <br>
+        <a data-active="buscador" href="">Buscar Tours</a> <br>
+        <a data-active="buscador" href="">Eliminar Tour</a> <br>
     </main>
     
     <?php include "includes/footer.php" ?>
